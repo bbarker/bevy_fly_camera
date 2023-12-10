@@ -15,13 +15,13 @@
 //! use bevy_fly_camera::{FlyCamera, FlyCameraPlugin};
 //!
 //! fn setup(commands: &mut Commands) {
-//!	  commands
+//!      commands
 //!     .spawn(Camera3dBundle::default())
 //!     .with(FlyCamera::default());
 //! }
 //!
 //! fn main() {
-//!	  App::build()
+//!      App::build()
 //!     .add_plugins(DefaultPlugins)
 //!     .add_systems(Startup, setup)
 //!     .add_plugins(FlyCameraPlugin)
@@ -43,7 +43,7 @@
 //! use bevy_fly_camera::{FlyCamera2d, FlyCameraPlugin};
 //! ```
 //! ```no_compile
-//!	commands
+//!    commands
 //!   .spawn(Camera2dBundle::default())
 //!   .with(FlyCamera2d::default());
 //! ```
@@ -64,7 +64,7 @@ pub use cam2d::FlyCamera2d;
 /// # Example
 /// ```no_compile
 /// fn setup(mut commands: Commands) {
-///	  commands
+///      commands
 ///     .spawn(Camera3dBundle::default())
 ///     .with(FlyCamera::default());
 /// }
@@ -127,7 +127,7 @@ fn forward_vector(rotation: &Quat) -> Vec3 {
 
 fn forward_walk_vector(rotation: &Quat) -> Vec3 {
 	let f = forward_vector(rotation);
-	
+
 	Vec3::new(f.x, 0.0, f.z).normalize()
 }
 
@@ -231,7 +231,7 @@ Include this plugin to add the systems for the FlyCamera bundle.
 
 ```no_compile
 fn main() {
-	App::build().add_plugins(FlyCameraPlugin);
+		App::build().add_plugins(FlyCameraPlugin);
 }
 ```
 
