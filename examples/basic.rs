@@ -1,5 +1,5 @@
+use bb_bevy_fly_camera::{FlyCamera, FlyCameraPlugin};
 use bevy::prelude::*;
-use bevy_fly_camera::{FlyCamera, FlyCameraPlugin};
 
 // This is a simple example of a camera that flies around.
 // There's an included example of a system that toggles the "enabled"

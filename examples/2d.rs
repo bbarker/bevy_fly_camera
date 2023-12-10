@@ -1,10 +1,7 @@
+use bb_bevy_fly_camera::{FlyCamera2d, FlyCameraPlugin};
 use bevy::prelude::*;
-use bevy_fly_camera::{FlyCamera2d, FlyCameraPlugin};
 
-fn init(
-	mut commands: Commands,
-	asset_server: Res<AssetServer>,
-) {
+fn init(mut commands: Commands, asset_server: Res<AssetServer>) {
 	commands
 		.spawn(Camera2dBundle::default())
 		.insert(FlyCamera2d::default());
